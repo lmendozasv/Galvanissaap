@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:elevation="2dip"
+
+    >
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/title_row"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Arqueo de caja"
+        android:background="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:padding="10dip"
+        android:layout_toStartOf="@+id/fecha" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:text="Medium Text"
+        android:gravity="center"
+        android:layout_marginRight="10dip"
+        android:background="#ffffff"
+        android:id="@+id/fecha"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/title_row" />
+
+
+</RelativeLayout>

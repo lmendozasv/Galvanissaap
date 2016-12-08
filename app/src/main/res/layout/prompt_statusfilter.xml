@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estados"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_alignEnd="@+id/chkAsignadas"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="271dp"
+        android:layout_height="wrap_content"
+        android:text="Asignadas"
+        android:id="@+id/chkAsignadas"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/textView1"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/chkConReporte"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Con reporte"
+        android:id="@+id/chkConReporte"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/chkAsignadas"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finalizadas"
+        android:id="@+id/chkFinalizadas"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/chkConReporte"
+        android:layout_alignEnd="@+id/chkConReporte"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+</RelativeLayout>
